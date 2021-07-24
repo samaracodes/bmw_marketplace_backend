@@ -1,24 +1,16 @@
-# README
+# BMW Marketplace 
+BMW Marketplace is an ecommerce application designed to provide a unique and simpler experience of buying and selling cars, parts, wheels, accessories, and more for BMW car enthusiasts.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Table of Contents
+- Overview
 
-Things you may want to cover:
+- Setup
 
-* Ruby version
 
-* System dependencies
+# License
+"BMW Marketplace"
+Copyright (c) 2021 Samara A Grant
+Distributed under the MIT license. 
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
