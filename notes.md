@@ -1,12 +1,15 @@
-Users can..
+# Users can..
 ---------------------------------------
 - Create, read, update, delete a listing
 - Buy it now
 - Bid on an auction
+- Host giveaways 
+- Make an offer
 - Private Message another user about an item
 
 
-Associations
+
+# Associations
 ---------------------------------------
 - Users has many :listings, :purchases, :messages (sent_messages\\received_messages)
 
@@ -26,14 +29,14 @@ Associations
 
 - Messages belongs to :sender/:receiver OR :seller\\:buyer
 
-
-Attributes 
+# Attributes 
 ---------------------------------------
 User:
 t.string :name
 t.string :email
 t.string :password_disgest
 t.string :dob (Maybe?)
+t.string :location
 
 
 Listing:
@@ -42,6 +45,9 @@ t.string :description
 t.string :conditon
 t.float :price
 t.integer :user_id
+t.string :type
+t.string :status
+??? duration ???
 
 
 Category:
@@ -62,7 +68,68 @@ Purchases:
 t.integer :user_id (seller_id, buyer_id)
 t.integer :listing_id
 
+# Task List
+-----------------------------------
+[ ] Create API controllers/serializers
 
+[ ] Implement Fast JSON
+
+[ ] Create models
+
+[ ] Create database
+
+[ ] Seed data
+
+# App Features To Build 
+------------------------------------
+[ ] Homepage includes amount of sold listings to date
+
+[ ] User signup/login
+
+[ ] Facebook/Google Omniauth
+
+[ ] User reset password
+
+[ ] User seller profile
+    - Active listings
+    
+[ ] User Control Panel (private)
+    - Active listings
+    - Sold listings
+    - Saved listings
+    - Bids/Offers
+    - Purchase History
+
+
+[ ] Buy now/Auction/Host a giveaway 
+
+[ ] Marketplace Listing Index page with: 
+    - search bar
+    - filter section:
+        - car chassis
+        - listing category
+        - shipped/local sale
+        - listing type: 
+            - auction
+            - buy now
+            - make offer
+        - active/sold listings
+        - listing location (nearest// might need a location api for this feature)
+    - user's saved listings
+    - price 
+    - condition
+
+[ ] Listing page
+
+[ ] Private Messages Index
+
+[ ] Private Message
+
+[ ] About page
+
+[ ] Contact page
+
+[ ] 
 
 
 
