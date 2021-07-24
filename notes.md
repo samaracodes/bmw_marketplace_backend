@@ -113,6 +113,7 @@ t.integer :listing_id
             - auction
             - buy now
             - make offer
+            - giveaway 
         - active/sold listings
         - listing location (nearest// might need a location api for this feature)
     - user's saved listings
