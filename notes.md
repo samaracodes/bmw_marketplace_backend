@@ -70,15 +70,15 @@ t.integer :listing_id
 
 # Task List
 -----------------------------------
-[ ] Create API controllers/serializers
+[DONE] Create API controllers/serializers
 
-[ ] Implement Fast JSON
+[DONE] Implement Fast JSON
 
-[ ] Create models
+[DONE] Create models
 
-[ ] Create database
+[DONE] Create database
 
-[ ] Seed data
+[pending completion] Seed data
 
 # App Features To Build 
 ------------------------------------
@@ -106,7 +106,7 @@ t.integer :listing_id
 [ ] Marketplace Listing Index page with: 
     - search bar
     - filter section:
-        - car chassis
+        - car chassis 
         - listing category
         - shipped/local sale
         - listing type: 
