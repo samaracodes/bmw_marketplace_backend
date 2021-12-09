@@ -5,6 +5,7 @@
 - Bid on an auction
 - Host giveaways 
 - Make an offer
+- Search for repair shops
 - Private Message another user about an item
 
 
@@ -17,7 +18,6 @@
 - Listing belongs to :category
 - Listing has many :listingcategories through :categories
 (Join Table)
-
 - Purchases belong to :user (:seller\\:buyer)
 
 - Category has many :listings 
@@ -82,7 +82,7 @@ t.integer :listing_id
 
 # App Features To Build 
 ------------------------------------
-[ ] Homepage includes amount of sold listings to date
+[ ] Add repair shop search in project (implement it with models or seeded data or something)
 
 [ ] User signup/login
 
@@ -101,7 +101,7 @@ t.integer :listing_id
     - Purchase History
 
 
-[ ] Buy now/Auction/Host a giveaway 
+[ ] Listing Categories: Buy now/Auction/Giveaway 
 
 [ ] Marketplace Listing Index page with: 
     - search bar
