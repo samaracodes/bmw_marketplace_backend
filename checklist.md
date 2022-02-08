@@ -10,3 +10,16 @@ progress:
 // pending //
 - listing needs to inherit listing_categories
 ** thoughts: it would be easier to keep the listings and part listings as separate objects. **
+
+2/7
+-----------------
+progress: 
+- minor changes in the listing database schemna
+- cors changed to localhost:3000
+- updated seed data
+- 
+
+//pending//
+- same as before, cars and parts listings should be separated. 
+
+
