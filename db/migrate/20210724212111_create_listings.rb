@@ -4,9 +4,10 @@ class CreateListings < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :description
       t.float :price
-      t.string :listing_type
+      t.string :image
       t.string :condition
       t.string :status
+      t.string :listing_type
       t.string :duration
       t.integer :user_id
       

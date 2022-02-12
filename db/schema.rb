@@ -25,9 +25,10 @@ ActiveRecord::Schema.define(version: 2021_07_24_213147) do
     t.string "title"
     t.string "description"
     t.float "price"
-    t.string "listing_type"
+    t.string "image"
     t.string "condition"
     t.string "status"
+    t.string "listing_type"
     t.string "duration"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
