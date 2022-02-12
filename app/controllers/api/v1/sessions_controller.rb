@@ -1,47 +1,33 @@
 class Api::V1::SessionsController < ApplicationController
     
-  def create
-        @user = User.find_by(email: session_params[:email])
-      
-        if @user && @user.authenticate(session_params[:password])
-          login!
-          render json: {
-            logged_in: true,
-            user: @user
-          }
-        else
-          render json: { 
-            status: 401,
-            errors: ['no such user, please try again']
-          }
-        end
-    end
-
-    def is_logged_in?
-        if logged_in? && current_user
-          render json: {
-            logged_in: true,
-            user: current_user
-          }
+    def create
+        @user = User.find_by(email: params[:session][:email])
+    
+        if @user && @user.authenticate(params[:session][:password])
+          session[:user_id] = @user.id
+          render json: UserSerializer.new(@user), status: :ok
         else
           render json: {
-            logged_in: false,
-            message: 'no such user'
+            error: "Invalid Credentials"
           }
         end
-    end
-
-    def destroy
-          logout!
+      end
+    
+      def get_current_user
+        if logged_in?
+          render json: UserSerializer.new(current_user)
+        else
           render json: {
-            status: 200,
-            logged_out: true
+            error: "No one is logged in"
           }
-    end
-
-    private
-
-    def session_params
-          params.require(:user).permit(:email, :password)
-    end
+        end
+      end
+    
+      def destroy
+        session.clear
+        render json: {
+          notice: "Successfully logged out"
+        }, status: :ok
+      end
+    
 end
