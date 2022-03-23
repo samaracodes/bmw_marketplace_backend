@@ -1,6 +1,6 @@
 class ListingSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :title, :description, :price, :condition, :price, :listing_type, :status, :user_id
+  attributes :title, :description, :price, :image, :condition, :price, :listing_type, :status, :user_id
   
   attribute :listing_categories do |listing|
     listing.categories.map do |category|
