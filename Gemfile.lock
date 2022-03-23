@@ -133,8 +133,6 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.3-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.3-x86_64-linux)
-      racc (~> 1.4)
     oauth2 (1.4.9)
       faraday (>= 0.17.3, < 3.0)
       jwt (>= 1.0, < 3.0)
@@ -153,7 +151,6 @@ GEM
     omniauth-oauth2 (1.7.2)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
-    pg (1.3.4)
     puma (5.6.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -196,6 +193,7 @@ GEM
       ffi (~> 1.0)
     ruby2_keywords (0.0.5)
     spring (4.0.0)
+    sqlite3 (1.4.2)
     strscan (3.0.1)
     thor (1.2.1)
     timeout (0.2.0)
@@ -209,7 +207,6 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
-  x86_64-linux
 
 DEPENDENCIES
   active_model_serializers
@@ -221,11 +218,11 @@ DEPENDENCIES
   net-http
   omniauth
   omniauth-google-oauth2
-  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.1)
   spring
+  sqlite3
   tzinfo-data
 
 RUBY VERSION
